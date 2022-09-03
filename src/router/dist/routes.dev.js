@@ -130,7 +130,7 @@ var _default = [// 主页路由
   meta: {
     show: true
   }
-}, // 我的订单页面 
+}, // 我的订单页面
 {
   path: '/center',
   component: function component() {
@@ -147,6 +147,9 @@ var _default = [// 主页路由
       return Promise.resolve().then(function () {
         return _interopRequireWildcard(require('@/pages/Center/myOrder'));
       });
+    },
+    meta: {
+      show: true
     }
   }, {
     path: 'grouporder',
@@ -154,6 +157,9 @@ var _default = [// 主页路由
       return Promise.resolve().then(function () {
         return _interopRequireWildcard(require('@/pages/Center/groupOrder'));
       });
+    },
+    meta: {
+      show: true
     }
   }]
 }];

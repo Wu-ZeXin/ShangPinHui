@@ -41,7 +41,8 @@ var _default = {
   },
   mutations: {
     GETSEARCHLIST: function GETSEARCHLIST(state, searchList) {
-      state.searchList = searchList; // console.log(state.searchList);
+      state.searchList = searchList;
+      console.log(state.searchList);
     },
     CHANGETRADEMARK: function CHANGETRADEMARK(state, trademark) {
       state.searchList.trademarkList = [trademark];

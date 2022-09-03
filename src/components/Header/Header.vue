@@ -4,7 +4,7 @@
     <div class="top">
         <div class="container">
             <div class="loginList">
-                <p>尚品汇欢迎您！</p>
+                <p>京东商城欢迎您！</p>
                 <p v-if="!userInfo.name">
                     <span>请</span>
                     <router-link to="/login">登录</router-link>
@@ -19,10 +19,10 @@
             <div class="typeList">
                 <router-link to="/center/myorder">我的订单</router-link>
                 <router-link to="/shopcart">我的购物车</router-link>
-                <a href="javascript:;">我的尚品汇</a>
-                <a href="javascript:;">尚品汇会员</a>
+                <a href="javascript:;">我的京东</a>
+                <a href="javascript:;">京东会员</a>
                 <a href="javascript:;">企业采购</a>
-                <a href="javascript:;">关注尚品汇</a>
+                <a href="javascript:;">关注京东</a>
                 <a href="javascript:;">合作招商</a>
                 <a href="javascript:;">商家后台</a>
             </div>
@@ -32,7 +32,8 @@
     <div class="bottom">
         <h1 class="logoArea">
             <router-link class="logo" title="尚品汇" to="/home">
-                <img src="./images/logo.png" alt="">
+                <!-- <img src="https://misc.360buyimg.com/mtd/pc/index_2019/1.0.1/assets/sprite/header/sprite.png" alt=""> -->
+                <div class="sprite"><span class="sprite-logo"></span></div>
             </router-link>
         </h1>
         <div class="searchArea">
@@ -152,8 +153,16 @@ export default {
 
             .logo {
                 img {
-                    width: 175px;
+                    width: 150px;
                     margin: 25px 45px;
+                    background-size: 240px 150px;
+                }
+
+                .sprite {
+                  width: 210px;
+                  height: 120px;
+                  background-image: url(https://misc.360buyimg.com/mtd/pc/index_2019/1.0.1/assets/sprite/header/sprite.png);
+                  background-position: 0 0;
                 }
             }
         }

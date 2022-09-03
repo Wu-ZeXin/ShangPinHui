@@ -21,7 +21,7 @@ export default {
   mutations:{
     GETSEARCHLIST(state,searchList) {
       state.searchList = searchList
-      // console.log(state.searchList);
+      console.log(state.searchList);
     },
 
     CHANGETRADEMARK(state,trademark) {
@@ -40,11 +40,11 @@ export default {
     tradeMarkList(state) {
       return state.searchList.trademarkList || []
     },
-    
+
     // 平台数据
     attrsList(state) {
       return state.searchList.attrsList || []
     }
 
   }
-} 
+}

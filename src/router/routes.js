@@ -45,7 +45,7 @@ export default [
       name: 'addshopcart',
       path: '/addcartsuccess',
       component: () => import ('@/pages/AddCartSuccess'),
-      meta: { show: true } 
+      meta: { show: true }
     },
 
     // 购物车页面路由
@@ -66,27 +66,29 @@ export default [
     {
       path: '/pay/:orderId?',
       component: () => import ('@/pages/Pay'),
-      meta: { show: true}
+      meta: { show: true }
     },
     // 支付成功页面
     {
       path: '/paysuccess',
       component: () => import ('@/pages/PaySuccess'),
-      meta: { show: true}
+      meta: { show: true }
     },
-    // 我的订单页面 
+    // 我的订单页面
     {
       path: '/center',
       component: () => import ('@/pages/Center'),
-      meta: { show: true},
+      meta: { show: true },
       children: [
         {
           path: 'myorder',
-          component: () => import ('@/pages/Center/myOrder')
+          component: () => import ('@/pages/Center/myOrder'),
+          meta: { show: true },
         },
         {
           path: 'grouporder',
-          component: () => import ('@/pages/Center/groupOrder')
+          component: () => import ('@/pages/Center/groupOrder'),
+          meta: { show: true },
         }
       ]
     }
